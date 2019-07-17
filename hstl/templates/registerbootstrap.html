@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'register.css')}}">
+    <title>Title</title>
+</head>
+<body>
+
+<!------ Include the above in your HEAD tag ---------->
+<form action="/form" method="post">
+<div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p>Register</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Full Name *" id = "newfirst_name" name="newfirst_name" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Occupation*" id="newoccupation"name="newoccupation"  required/>
+                                <!--<select>-->
+                                    <!--<option>Employee</option>-->
+                                    <!--<option>Student</option>-->
+                                    <!--<option>Others</option>-->
+                                <!--</select>-->
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="date" class="form-control" placeholder="Date of birth" id="newDOB" name="newDOB" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="number"  class="form-control" placeholder="Mobile" id="newMobileno"name="newMobileno"  required/>
+                            </div>
+                        </div>
+                    </div>
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Idproof" id="newid_proof" name="newid_proof" required/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Idproof No" id="newid_proof_no" name="newid_proof_no" required/>
+                            </div>
+                        </div>
+                    </div>
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="H.no" id="newHno" name="newHno" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Street" id="newstreet" name="newstreet" required/>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="District" id="newdistrict" name="newdistrict" required/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                             <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Landmark" id="newlandmark"name="newlandmark" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Village" id="newVillage" name="newVillage" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Pincode" id="newpincode" name="newpincode" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+                        <button type="submit" class="btnSubmit">Submit</button>
+                        <button type="reset" class="btnSubmit">Reset</button>
+
+                    </center>
+                </div>
+            </div>
+        </div>
+            </div>
+</div>
+</form>
+</body>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
